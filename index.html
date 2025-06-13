@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conexão Campo Cidade</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .hero-pattern {
+            background-image: radial-gradient(circle at 10% 20%, rgba(91, 173, 254, 0.1) 0%, rgba(91, 254, 178, 0.05) 90%);
+        }
+        .gradient-text {
+            background: linear-gradient(90deg, #2b6cb0, #38b2ac);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .card-hover:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        @keyframes float {
+            0%, 100% { transform: translateY(0); }
+            50% { transform: translateY(-10px); }
+        }
+        .floating {
+            animation: float 4s ease-in-out infinite;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <div class="flex-shrink-0 flex items-center">
+                        <i class="fas fa-wifi text-blue-500 text-2xl mr-2"></i>
+                        <span class="text-xl font-bold gradient-text">Conexão Campo Cidade</span>
+                    </div>
+                </div>
+                <div class="hidden md:ml-6 md:flex md:items-center md:space-x-8">
+                    <a href="#inicio" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Início</a>
+                    <a href="#tecnologias" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Tecnologias</a>
+                    <a href="#beneficios" class="text-gray-900 hover:text-blue-600 px-3 py-2 text-sm font-medium">Benefícios</a>
+            
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button type="button" class="text-gray-500 hover:text-gray-900 focus:outline-none">
+                        <i class="fas fa-bars text-xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-pattern py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div>
+                    <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+                        <span class="gradient-text">Tecnologia</span> aproximando o campo da cidade
+                    </h1>
+                    <p class="text-lg text-gray-600 mb-8">
+                        A revolução digital está transformando a relação entre o agronegócio e os centros urbanos, criando pontes eficientes de comunicação, logística e inovação.
+                    </p>
+                    <div class="flex gap-4">
+                        <a href="#tecnologias" class="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                            Saiba Mais
+                        </a>                
+                    </div>
+                </div>
+                <div class="hidden lg:block mt-10 lg:mt-0">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Tecnologia no campo" 
+                         class="rounded-xl shadow-xl floating" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Technologies Section -->
+    <section id="tecnologias" class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Tecnologias que estão revolucionando o campo</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    As inovações urbanas estão sendo adaptadas para potencializar a produção rural e melhorar a conexão com os centros consumidores.
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl transition duration-300 card-hover">
+                    <div class="w-14 h-14 bg-blue-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-satellite-dish text-blue-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Conectividade Rural</h3>
+                    <p class="text-gray-600">Internet via satélite e redes 5G levando banda larga às propriedades rurais mais remotas.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl transition duration-300 card-hover">
+                    <div class="w-14 h-14 bg-green-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-tractor text-green-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Agricultura de Precisão</h3>
+                    <p class="text-gray-600">Drones, sensores e GPS otimizando o uso de insumos e aumentando a produtividade.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl transition duration-300 card-hover">
+                    <div class="w-14 h-14 bg-purple-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-box text-purple-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Logística Inteligente</h3>
+                    <p class="text-gray-600">Plataformas digitais conectando produtores diretamente a mercados e distribuidores.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl transition duration-300 card-hover">
+                    <div class="w-14 h-14 bg-yellow-100 rounded-lg flex items-center justify-center mb-4">
+                        <i class="fas fa-robot text-yellow-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-2">Automação</h3>
+                    <p class="text-gray-600">Robótica e IoT transformando processos agrícolas com eficiência e precisão.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section id="beneficios" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-2 lg:gap-12 items-center">
+                <div class="mb-12 lg:mb-0">               
+                
+                <div>
+                    <h2 class="text-3xl font-bold text-gray-900 mb-6">Benefícios dessa conexão</h2>
+                    
+                    <div class="space-y-6">
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-md bg-blue-500 text-white">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Aumento da Produtividade</h3>
+                                <p class="mt-2 text-gray-600">
+                                    Tecnologias permitem otimizar recursos e aumentar a produção com menor custo.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-md bg-green-500 text-white">
+                                    <i class="fas fa-leaf"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Sustentabilidade</h3>
+                                <p class="mt-2 text-gray-600">
+                                    Uso preciso de insumos reduz desperdícios e impactos ambientais.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-md bg-purple-500 text-white">
+                                    <i class="fas fa-globe-americas"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Acesso a Mercados</h3>
+                                <p class="mt-2 text-gray-600">
+                                    Plataformas digitais conectam produtores diretamente aos consumidores urbanos.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex">
+                            <div class="flex-shrink-0">
+                                <div class="flex items-center justify-center h-10 w-10 rounded-md bg-yellow-500 text-white">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-medium text-gray-900">Capacitação</h3>
+                                <p class="mt-2 text-gray-600">
+                                    E-learning e treinamentos remotos qualificam mão de obra rural.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="py-16 bg-blue-600 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 text-center">
+                <div class="p-6">
+                    <div class="text-4xl font-bold mb-2">83%</div>
+                    <div class="text-lg">aumento na adoção de tecnologias digitais no campo nos últimos 5 anos</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold mb-2">+500k</div>
+                    <div class="text-lg">produtores rurais conectados a marketplaces digitais</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-4xl font-bold mb-2">40%</div>
+                    <div class="text-lg">redução no desperdício com agricultura de precisão</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="py-16 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Quem já está conectado</h2>
+                <p class="text-lg text-gray-600 max-w-3xl mx-auto">
+                    Depoimentos de quem já experimenta os benefícios dessa integração
+                </p>
+            </div>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">
+                        "Com a plataforma digital consegui vender direto para restaurantes na capital, aumentando meu lucro em 30%."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-blue-200 flex items-center justify-center text-blue-800 font-bold mr-3">JC</div>
+                        <div>
+                            <p class="font-medium">João Carlos</p>
+                            <p class="text-sm text-gray-500">Produtor de hortaliças - Minas Gerais</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">
+                        "Os sensores de umidade me ajudaram a reduzir o consumo de água em 25% sem perder produtividade."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-green-200 flex items-center justify-center text-green-800 font-bold mr-3">AS</div>
+                        <div>
+                            <p class="font-medium">Ana Silva</p>
+                            <p class="text-sm text-gray-500">Cafeicultora - São Paulo</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-xl">
+                    <div class="flex mb-4">
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star text-yellow-400"></i>
+                        <i class="fas fa-star-half-alt text-yellow-400"></i>
+                    </div>
+                    <p class="text-gray-700 italic mb-4">
+                        "Com os cursos online, pude me capacitar em novas técnicas sem precisar sair da propriedade."
+                    </p>
+                    <div class="flex items-center">
+                        <div class="h-10 w-10 rounded-full bg-purple-200 flex items-center justify-center text-purple-800 font-bold mr-3">MR</div>
+                        <div>
+                            <p class="font-medium">Marcos Rocha</p>
+                            <p class="text-sm text-gray-500">Pecuarista - Mato Grosso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-16 bg-gradient-to-r from-blue-600 to-teal-500 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl font-bold mb-6"></h2>
+            <p class="text-lg mb-8 max-w-3xl mx-auto">
+                Prouzido com ajuda de inteligência artificial - by Pablo Boer 3A
+            </p>
+        </div>
+
+    
+
+    <script>
+        // Simple form submission handler
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Mensagem enviada com sucesso! Entraremos em contato em breve.');
+            this.reset();
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
